@@ -7,3 +7,11 @@
   font-size: calc(10px + 2vmin);
   color: #333;
 }
+
+.add-reminder {
+  text-align: right;
+}
+
+.calendar {
+  text-align: center;
+}
