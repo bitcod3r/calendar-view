@@ -1,22 +1,25 @@
 import React from 'react';
+import { Provider } from "react-redux";
 import './App.css';
-import { Calendar } from 'src/Calendar'
+import { Calendar } from "./Calendar";
 
-function App() {
+function App({ reduxStore }) {
   return (
-    <div className="App">
-      <section>
-        <div className='add-reminder'>
-          <button>Add Reminder</button>
-        </div>  
-      </section>
+    <Provider store={reduxStore}>
+      <div className="App">
+        <section>
+          <div className='add-reminder'>
+            <button>Add Reminder</button>
+          </div>  
+        </section>
 
-      <section>
-        <div className='calendar'>
-          <Calendar />
-        </div>
-      </section>
-    </div>
+        <section>
+          <div className='calendar'>
+            <Calendar />
+          </div>
+        </section>
+      </div>
+    </Provider>
   );
 }
 
