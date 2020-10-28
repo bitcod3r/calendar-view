@@ -20,9 +20,8 @@ const fakeResponse = ({ status, data }) => {
 class FakeHttpApi {
   constructor () {
     this._reminders = mockReminders;
-    this.getRemindersByMonthYear = this.getRemindersByMonthYear.bind(this);
-    this.getFirst5RemindersByDay = this.getFirst5RemindersByDay.bind(this);
-    this.getContact = this.getContact.bind(this);
+    this.getRemindersByRange = this.getRemindersByRange.bind(this);
+    this.getReminder = this.getReminder.bind(this);
   }
 
   getRemindersByRange ({ startDate, endDate }) {
@@ -31,7 +30,7 @@ class FakeHttpApi {
 
     const matchingReminders = this._reminders.filter(reminder => {
         const reminderDate = moment(reminder.datetime);
-        (reminderDate > from && reminderDate < to)
+        return (reminderDate > from && reminderDate < to);
     });
 
     return fakeResponse({
