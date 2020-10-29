@@ -1,0 +1,11 @@
+.calendar-table,  td{
+    border: 1px solid #333;
+}
+
+.week-day {
+    color: #fff;
+    background: #1a73e8;
+    font: bold 18px/30px "Trebuchet MS", Verdana, Arial;
+    padding: 15px 40px;
+}
+

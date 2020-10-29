@@ -6,10 +6,10 @@ class Calendar extends React.Component {
 
     render() {
       return(    
-        <React.Fragment>
+        <>
             <CalendarHeader currentMonth="October" />
             <CalendarMonth />
-        </React.Fragment>  
+        </>
       );
     }
 }
