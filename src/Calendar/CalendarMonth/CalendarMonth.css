@@ -1,11 +1,59 @@
-.calendar-table,  td{
-    border: 1px solid #333;
-}
-
 .week-day {
     color: #fff;
     background: #1a73e8;
     font: bold 18px/30px "Trebuchet MS", Verdana, Arial;
-    padding: 15px 40px;
+    padding: 10px 0;
 }
 
+.calendar-table {
+    margin: 15px;
+    border-collapse: collapse;
+}
+
+.calendar-table td{
+    border: solid 1px #333;
+}
+
+.empty {
+    margin: 1px;
+    color: #ccc;
+}
+
+.calendar-day-container {
+    width: 150px;
+    height: 150px;
+}
+.calendar-day-number {
+    float: left;
+    position: relative;
+    top:0;
+    left:0;
+    font: bold 17px "Trebuchet MS", Verdana, Arial;
+    margin: 0;
+}
+
+.calendar-reminders-container {
+    float: right;
+    top: 0;
+    right: 0;
+    position: relative;
+}
+
+.calendar-reminders-container div {
+    font: bold 18px "Trebuchet MS", Verdana, Arial;
+    text-align: left;
+    margin: 15px 5px;
+    width: 130px;
+}
+
+.calendar-reminders-container div span {
+    font: bold 14px "Trebuchet MS", Verdana, Arial;
+}
+
+.weekend-day .calendar-day-container {
+    background-color: #ddd;
+}
+
+.weekend-day .calendar-day-number {
+    color: #1957a9;
+}
