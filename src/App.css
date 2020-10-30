@@ -8,8 +8,12 @@
   color: #333;
 }
 
-.add-reminder {
-  text-align: right;
+.add-reminder button {
+  font: bold 20px "Trebuchet MS", Verdana, Arial;
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  background: rgb(168, 220, 110);
 }
 
 .calendar {

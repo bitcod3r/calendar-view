@@ -1,0 +1,12 @@
+.calendar-header {
+    margin: 45px;
+}
+
+.calendar-header span {
+    padding: 0 25px;
+}
+
+.calendar-header span button{
+    width: 50px;
+    height: 50px;
+}
